@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap');
+
+*{
+  transition: 0.5s;
+  font-family: 'Jost', sans-serif;
+}
+
+.search-container {
+    width: 100%;
+    background: rgba(0,0,0,0.2);
+    padding: 15px 0px;
+}
+.form-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-inputs input {
+    flex: 0.7;
+
+    padding: 10px 15px;
+    border: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.form-inputs button {
+    flex: 0.1;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.form-inputs button:hover,
+.form-inputs button:active,
+.form-inputs button:focus{
+    opacity: 0.6;
+}
+
+.recipes-container {
+    padding: 20px;
+}
+
+.recipes-container .recipe-container {
+    width: 33%;
+    float: left;
+    text-align: center;
+    pad: 10px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
