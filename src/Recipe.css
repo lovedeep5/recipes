@@ -7,7 +7,7 @@
 
 .search-container {
     width: 100%;
-    background: rgba(0,0,0,0.2);
+    background: #eba83a;
     padding: 15px 0px;
 }
 .form-inputs {
@@ -41,12 +41,37 @@
 
 .recipes-container {
     padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+.recipe-container img {
+    max-width: 100%;
+}
+.recipes-container .recipe-container {
+        text-align: center;
+     border: 1px solid rgba(0,0,0,0.2);
+}
+.recipes-container h3 {
+    text-align: left;
+    padding-left: 8%;
+}
+.recipes-container ul {
+    list-style: none;
+    text-align: left;
 }
 
-.recipes-container .recipe-container {
-    width: 33%;
-    float: left;
-    text-align: center;
-    pad: 10px;
-    border: 1px solid rgba(0,0,0,0.2);
+
+
+@media (min-width: 768px){
+    .recipes-container {
+        grid-template-columns: 1fr 1fr;
+     
+    }
+}
+@media (min-width: 992px){
+    .recipes-container {
+        grid-template-columns: 1fr 1fr 1fr;
+     
+    }   
 }

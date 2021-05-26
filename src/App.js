@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Recipes from './Recipes';
 import './App';
 
+
 function App() {
 
   const APP_ID = "dff5111d";
@@ -39,14 +40,14 @@ function App() {
       <div className="search-container">
         <form onSubmit={searchRecipe}>
           <div className="form-inputs">
-          <input type="text" value={search} onChange={setInput} required="true" placeholder="Type and hit search for more recipes..."/>
+          <input type="text" value={search} onChange={setInput} required placeholder="Type and hit search for more recipes..."/>
           <button type="submit">Search</button></div>
         </form>
       </div>
       
       <div className="recipes-container">
       {recipes.map(recipe => (
-        <Recipes key={recipe.recipe.label} title={recipe.recipe.label} image={recipe.recipe.image} calories={ recipe.recipe.calories}/>
+        <Recipes key={recipe.recipe.label} title={recipe.recipe.label} image={recipe.recipe.image} calories={ recipe.recipe.calories} ingredients={recipe.recipe.ingredients}/>
   ))}</div>
     </div>
   );
